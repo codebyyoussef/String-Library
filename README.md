@@ -31,27 +31,27 @@ String Library is a custom C++ class designed to simplify string manipulation an
   * Enumerations for counting specific types of letters.
 
 ## Installation
-To use the MyString class in your C++ project, simply copy the MyString.h header file into your project directory and include it in your source files:
+To use the StringLib class in your C++ project, simply copy the StringLib.h header file into your project directory and include it in your source files:
 
 ## Usage
 Here's an example of how to use the String class:
 
-    #include "String.h"
+    #include "StringLib.h"
     int main() {
-    String Str("Hello world, welcome to C++ programming!");
+    StringLib str("Hello world, welcome to C++ programming!");
     
     // Convert to uppercase
-    Str.convertToUppercase();
-    cout << "Uppercase: " << Str.getValue() << endl;
+    str.convertToUppercase();
+    cout << "Uppercase: " << str.getValue() << endl;
     
     // Count words
-    cout << "Word count: " << Str.countWords() << endl;
+    cout << "Word count: " << str.countWords() << endl;
     
     // Count vowels
-    cout << "Vowel count: " << Str.countVowels() << endl;
+    cout << "Vowel count: " << str.countVowels() << endl;
 
     // Split the string by space
-    vector<string> words = Str.splitString(" ");
+    vector<string> words = str.splitString(" ");
     for (const auto& word : words) {
         cout << word << endl;
     }
@@ -59,8 +59,8 @@ Here's an example of how to use the String class:
     return 0;
 }
 ## Methods Overview
-* MyString(): Default constructor that initializes the string to an empty value.
-* MyString(string value): Constructor that initializes the string with a specified value.
+* StringLib(): Default constructor that initializes the string to an empty value.
+* StringLib(string value): Constructor that initializes the string with a specified value.
 * strLength(): Returns the length of the string.
 * countWords(): Counts the number of words in the string.
 * convertToUppercase(): Converts the entire string to uppercase.
@@ -69,4 +69,4 @@ Here's an example of how to use the String class:
 * replaceSubstring(): Replaces occurrences of a substring with another string.
 * removePunctuations(): Removes all punctuation from the string.
 
-For more detailed information on all available methods, please refer to the class definition in the MyString.h file.
+For more detailed information on all available methods, please refer to the class definition in the StringLib.h file.
