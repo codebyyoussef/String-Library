@@ -33,28 +33,25 @@ String Library is a custom C++ class designed to simplify string manipulation an
 ## Installation
 To use the MyString class in your C++ project, simply copy the MyString.h header file into your project directory and include it in your source files:
 
-#include "MyString.h"
-No additional dependencies are required.
-
 ## Usage
 Here's an example of how to use the String class:
 
-    #include "MyString.h"
+    #include "String.h"
     int main() {
-    MyString myStr("Hello world, welcome to C++ programming!");
+    String Str("Hello world, welcome to C++ programming!");
     
     // Convert to uppercase
-    myStr.convertToUppercase();
-    cout << "Uppercase: " << myStr.getValue() << endl;
+    Str.convertToUppercase();
+    cout << "Uppercase: " << Str.getValue() << endl;
     
     // Count words
-    cout << "Word count: " << myStr.countWords() << endl;
+    cout << "Word count: " << Str.countWords() << endl;
     
     // Count vowels
-    cout << "Vowel count: " << myStr.countVowels() << endl;
+    cout << "Vowel count: " << Str.countVowels() << endl;
 
     // Split the string by space
-    vector<string> words = myStr.splitString(" ");
+    vector<string> words = Str.splitString(" ");
     for (const auto& word : words) {
         cout << word << endl;
     }
