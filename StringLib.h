@@ -4,17 +4,17 @@
 
 using namespace std;
 
-class MyString
+class StringLib
 {
 private:
 	string _value;
 
 public:
-	MyString()
+	StringLib()
 	{
 		_value = "";
 	}
-	MyString(string value)
+	StringLib(string value)
 	{
 		_value = value;
 	}
