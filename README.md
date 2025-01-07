@@ -38,8 +38,8 @@ No additional dependencies are required.
 
 ## Usage
 Here's an example of how to use the String class:
-    \#include "MyString.h"
 
+    #include "MyString.h"
     int main() {
     MyString myStr("Hello world, welcome to C++ programming!");
     
