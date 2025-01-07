@@ -1,9 +1,9 @@
 # String-Library
 String Library is a custom C++ class designed to simplify string manipulation and text processing. Whether you're working with basic string operations or advanced text formatting, this library provides a wide range of tools to handle strings efficiently and effectively.
 
-**Key Features:**
+## Key Features:
 
-* Basic String Operations:
+* **Basic String Operations:**
   * Get and set string values.
   * Calculate string length.
   * Split and join strings.
