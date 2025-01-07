@@ -36,28 +36,30 @@ To use the StringLib class in your C++ project, simply copy the StringLib.h head
 ## Usage
 Here's an example of how to use the String class:
 
-    #include "StringLib.h"
-    int main() {
-    StringLib str("Hello world, welcome to C++ programming!");
+    #include "StringLib.h" 
     
-    // Convert to uppercase
-    str.convertToUppercase();
-    cout << "Uppercase: " << str.getValue() << endl;
+    int main() 
+    {
+        StringLib str("Hello world, welcome to C++ programming!");
+        
+        // Convert to uppercase
+        str.convertToUppercase();
+        cout << "Uppercase: " << str.getValue() << endl;
+        
+        // Count words
+        cout << "Word count: " << str.countWords() << endl;
+        
+        // Count vowels
+        cout << "Vowel count: " << str.countVowels() << endl;
     
-    // Count words
-    cout << "Word count: " << str.countWords() << endl;
+        // Split the string by space
+        vector<string> words = str.splitString(" ");
+        for (const auto& word : words) {
+            cout << word << endl;
     
-    // Count vowels
-    cout << "Vowel count: " << str.countVowels() << endl;
-
-    // Split the string by space
-    vector<string> words = str.splitString(" ");
-    for (const auto& word : words) {
-        cout << word << endl;
+        return 0;
     }
-
-    return 0;
-}
+    
 ## Methods Overview
 * StringLib(): Default constructor that initializes the string to an empty value.
 * StringLib(string value): Constructor that initializes the string with a specified value.
