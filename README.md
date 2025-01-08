@@ -1,38 +1,29 @@
-# String-Library
-String Library is a custom C++ class designed to simplify string manipulation and text processing. Whether you're working with basic string operations or advanced text formatting, this library provides a wide range of tools to handle strings efficiently and effectively.
+# StringLib
 
-## Key Features:
+StringLib is a versatile and easy-to-use C++ library for string manipulation. It offers a rich set of features to simplify common string operations, making it ideal for developers who work with text processing, formatting, and analysis in their projects.
 
-* **Basic String Operations:**
-  * Get and set string values.
-  * Calculate string length.
-  * Split and join strings.
-  
-* **Text Analysis:**
-  * Count words, vowels, capital letters, small letters, and specific characters.
-  * Identify and print vowels in a string.
+## Features:
 
-* **Case Conversion:**
-  * Convert strings to uppercase or lowercase.
-  * Capitalize or lowercase the first letter of each word.
-  * Invert the case of all letters.
-
-* **Text Cleaning:**
-  * Trim whitespace from the left, right, or both sides.
-  * Remove punctuation from a string.
-
-* **Advanced String Tools:**
-  * Reverse the words in a string.
-  * Replace substrings with case-sensitive and case-insensitive options.
-  * Print the first letter of each word.
-
-* **Helper Methods:**
-  * Check if a character is a vowel.
-  * Enumerations for counting specific types of letters.
-
-## Installation
-To use the StringLib class in your C++ project, simply copy the StringLib.h header file into your project directory and include it in your source files:
-
+* **String Length & Word Count**: Calculate the length of a string or count the number of words efficiently.
+* **Case Manipulation**: Convert strings to uppercase, lowercase, or invert letter cases.
+* **Word Operations**:
+   * Extract and print the first letter of each word.
+   * Capitalize or decapitalize the first letter of each word.
+   * Reverse the order of words in a string.
+* **Character Analysis**:
+   * Count vowels, or specific characters (case-sensitive or case-insensitive).
+   * Identify and print vowels in a string.
+* **Trimming & Splitting**:
+   * Trim whitespace from the left, right, or both sides of a string.
+   * Split a string into words or tokens using custom delimiters.
+ * **Joining Strings**: Merge an array or vector of strings with a custom delimiter.
+* **Substring Replacement**: Replace specific substrings in a string (with or without case sensitivity).
+* **Remove Punctuation**: Strip punctuation characters from strings for clean processing.
+* **Advanced Utilities**:
+   * Count capital and small letters.
+   * Replace substrings and handle match cases.
+   * Remove or replace words.
+ 
 ## Usage
 Here's an example of how to use the String class:
 
@@ -60,15 +51,7 @@ Here's an example of how to use the String class:
         return 0;
     }
     
-## Methods Overview
-* StringLib(): Default constructor that initializes the string to an empty value.
-* StringLib(string value): Constructor that initializes the string with a specified value.
-* strLength(): Returns the length of the string.
-* countWords(): Counts the number of words in the string.
-* convertToUppercase(): Converts the entire string to uppercase.
-* convertToLowercase(): Converts the entire string to lowercase.
-* invertAllLettersCase(): Inverts the case of all letters in the string.
-* replaceSubstring(): Replaces occurrences of a substring with another string.
-* removePunctuations(): Removes all punctuation from the string.
+## Installation
+To use the StringLib class in your C++ project, simply copy the StringLib.h header file into your project directory and include it in your source files:
 
 For more detailed information on all available methods, please refer to the class definition in the StringLib.h file.
