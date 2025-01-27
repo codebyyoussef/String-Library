@@ -15,7 +15,8 @@ StringLib is a library for string manipulation. It offers a set of features to s
 * Split a string into words using custom delimiters.
 * Joining Strings: Merge an array or vector of strings with a custom delimiter.
 * Replace specific substrings in a string (with or without case sensitivity).
-* Remove punctuation characters from strings
+* Remove punctuation characters from strings.
+* Check if a string has valid spacing.
  
 ## Usage:
 Here's an example of how to use the StringLib class:
