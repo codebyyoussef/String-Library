@@ -483,5 +483,32 @@ public:
 	{
 		_value = removePunctuation(_value);
 	}
+
+	static short countSpaces(string s)
+	{
+		short spacesCounter = 0;
+		for (const char& ch : s)
+		{
+			if (ch == ' ')
+				spacesCounter++;
+		}
+		return spacesCounter;
+	}
+	short countSpaces()
+	{
+		return counSpaces(_value);
+	}
+
+	static bool validSpacing(string s) {
+		if (s.length() == 0)
+			return true;
+		if (s.length() > 1 && (s.front() == ' ' || s.back() == ' '))
+			return false;
+		return countSpaces(s) >= countWords(s) ? false : true;
+	}
+	bool validSpacing()
+	{
+		return validSpacing(_value);
+	}
 };
 
