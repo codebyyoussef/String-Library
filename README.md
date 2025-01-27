@@ -1,47 +1,38 @@
 # StringLib
 
-StringLib is a versatile and easy-to-use C++ library for string manipulation. It offers a rich set of features to simplify common string operations, making it ideal for developers who work with text processing, formatting, and analysis in their projects.
+StringLib is a library for string manipulation. It offers a set of features to simplify common string operations, It is simple to use, so I hope you find it useful to you.
 
 ## Features:
-
-* **String Length & Word Count**: Calculate the length of a string or count the number of words efficiently.
-* **Case Manipulation**: Convert strings to uppercase, lowercase, or invert letter cases.
-* **Word Operations**:
-   * Extract and print the first letter of each word.
-   * Capitalize or decapitalize the first letter of each word.
-   * Reverse the order of words in a string.
-* **Character Analysis**:
-   * Count vowels, or specific characters (case-sensitive or case-insensitive).
-   * Identify and print vowels in a string.
-* **Trimming & Splitting**:
-   * Trim whitespace from the left, right, or both sides of a string.
-   * Split a string into words or tokens using custom delimiters.
- * **Joining Strings**: Merge an array or vector of strings with a custom delimiter.
-* **Substring Replacement**: Replace specific substrings in a string (with or without case sensitivity).
-* **Remove Punctuation**: Strip punctuation characters from strings for clean processing.
-* **Advanced Utilities**:
-   * Count capital and small letters.
-   * Replace substrings and handle match cases.
-   * Remove or replace words.
+* Calculate the number of words in a string.
+* Convert strings to uppercase, lowercase, or invert letter cases.
+* Extract and print the first letter of each word.
+* Capitalize or decapitalize the first letter of each word.
+* Reverse the order of words in a string.
+* Count vowels, or specific characters (case-sensitive or case-insensitive).
+* Identify and print vowels in a string.
+* Print words in a string.
+* Trim whitespace from the left, right, or both sides of a string.
+* Split a string into words using custom delimiters.
+* Joining Strings: Merge an array or vector of strings with a custom delimiter.
+* Replace specific substrings in a string (with or without case sensitivity).
+* Remove punctuation characters from strings
  
-## Usage
-Here's an example of how to use the String class:
+## Usage:
+Here's an example of how to use the StringLib class:
 
     #include "StringLib.h" 
     
     int main() 
     {
-        StringLib str("Hello world, welcome to C++ programming!");
+        StringLib str("Hello world");
+
+        // Count words
+        cout << "Word count: " << str.countWords() << endl; // 2
         
         // Convert to uppercase
         str.convertToUppercase();
-        cout << "Uppercase: " << str.getValue() << endl;
+        cout << "Uppercase: " << str.getValue() << endl; // HELLO WORLD
         
-        // Count words
-        cout << "Word count: " << str.countWords() << endl;
-        
-        // Count vowels
-        cout << "Vowel count: " << str.countVowels() << endl;
     
         // Split the string by space
         vector<string> words = str.splitString(" ");
