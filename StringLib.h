@@ -496,7 +496,7 @@ public:
 	}
 	short countSpaces()
 	{
-		return counSpaces(_value);
+		return countSpaces(_value);
 	}
 
 	static bool validSpacing(string s) {
